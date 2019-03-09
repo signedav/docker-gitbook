@@ -1,4 +1,5 @@
 FROM ubuntu:bionic
+MAINTAINER David Signer
 
 RUN apt update \
 	&& yes | apt install nodejs \
