@@ -9,8 +9,8 @@ RUN apt update \
 	&& yes | apt install zip \
 	&& yes | apt install wget \
 	&& wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin \
-	npm install gitbook-cli -g \
-	yes | apt install python3-pip \
-	pip3 install standardebooks
+	&& npm install gitbook-cli -g \
+	&& yes | apt install python3-pip \
+	&& pip3 install standardebooks
 
 
